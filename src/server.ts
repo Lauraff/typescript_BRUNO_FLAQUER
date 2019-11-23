@@ -11,7 +11,7 @@ app.set('views', __dirname + "/view")
 app.set('view engine', 'ejs');
 
 app.get('/', (req: any, res: any) => {
-  res.write('Hello world')
+  res.write('Hello world \n\nTo test this application, pass a name in parameters and it will display "Hello name", as well as a button "bring the metrics" that, when clicked, will display two lines showing timestamps.\nExample: localhost:/8080/hello/Laura')
   res.end()
 })
 
